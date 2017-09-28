@@ -1,62 +1,3 @@
-/*
-  Template Name: Subash Ecommerce Responsive Bootstrap Template
-  Description: This is html5 template
-  Author: codecarnival
-  Version: 1.0
-  Design and Developed by: codecarnival
-  NOTE: This is main style sheet of template, 
-  This file contains the styling for the actual Template. 
-  Please do not change anything here! write in a custom.css file if required!
-
-*/
-
-
-/*================================================
-[  Table of contents  ]
-================================================
-  1.General
-  2. transtion
-  3. button
-    3.1 button small
-    3.2 buttons variation
-  4. social-icon
-  5. Text color
-  6. Input 
-  7. submit button hover 
-  8. back-to-top 
-  9. slick-arrow 
-    9.1 slick-arrow-1
-    9.2 slick-arrow-2
-    9.3 slick-arrow-3
-  10. slick-dots
-    10.1 slick-dots-1
-  11. quick view (modal)  
-  12. Basic margin padding  
-    12.1 Margin top 
-    12.2 Margin right  
-    12.3 Margin bottom 
-    12.4 Margin left 
-    12.5 Padding top 
-    12.6 Padding right   
-    12.7 Padding bottom    
-    12.8 Padding left  
-    12.9 Page section padding    
-    12.10 Page section margin     
-    12.11 Extra padding & margin
-  13. Scroll Up 
-  14. Extra class (Custom cloumn)
-  15. box-shadow 
-  16. Background variation set 
-  17. Opacity background
-  18. image background
-  19. tooltip
-  20. separator
-  21. Section title 1   
-  22. section title 2 
-
-======================================
-[ End table content ]
-======================================*/
 
 
 /*************************
@@ -102,7 +43,7 @@ a:focus,
 
 a:focus,
 a:hover {
-    color: #ff7f00;
+    color: #167ac6;
     text-decoration: none;
 }
 
@@ -215,31 +156,31 @@ label {
 }
 
 *::-moz-selection {
-    background: #4fc1f0;
+    background: #167ac6;
     color: #fff;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: #4fc1f0;
+    background: #167ac6;
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #4fc1f0;
+    background: #167ac6;
     color: #fff;
     text-shadow: none;
 }
 
 .mark,
 mark {
-    background: #ff7f00 none repeat scroll 0 0;
+    background: #167ac6 none repeat scroll 0 0;
     color: #fff;
 }
 
 span.tooltip-content {
-    color: #ff7f00;
+    color: #167ac6;
     cursor: help;
     font-weight: 600;
 }
@@ -337,7 +278,7 @@ textarea {
 *************************/
 
 a.button {
-    background: #ff7f00;
+    background: #167ac6;
     border: 0 none;
     border-radius: 3px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03) inset;
@@ -402,7 +343,7 @@ a.button.button-white {
     padding: 0;
     position: relative;
     background-color: #fff;
-    color: #4FC1F0;
+    color: #167ac6;
     font-size: 15px;
 }
 
@@ -412,7 +353,7 @@ a.button.button-white i {
     float: left;
     padding: 14px;
     font-size: 16px;
-    color: #4FC1F0;
+    color: #167ac6;
     font-weight: normal;
     width: 50px;
     text-align: center;
@@ -440,7 +381,7 @@ a.button.button-grey {
     padding: 0;
     position: relative;
     background-color: #eceff7;
-    color: #4FC1F0;
+    color: #167ac6;
     font-size: 15px;
 }
 
@@ -450,7 +391,7 @@ a.button.button-grey i {
     float: left;
     padding: 14px;
     font-size: 16px;
-    color: #4FC1F0;
+    color: #167ac6;
     font-weight: normal;
     width: 50px;
     text-align: center;
@@ -463,7 +404,7 @@ a.button.button-grey span {
     z-index: 2;
     padding: 11px 20px;
     font-size: 15px;
-    color: #4FC1F0;
+    color: #167ac6;
     font-weight: normal;
 }
 
@@ -478,7 +419,7 @@ a.button.button-black {
     padding: 0;
     position: relative;
     background-color: #575757;
-    color: #4FC1F0;
+    color: #167ac6;
     font-size: 15px;
 }
 
@@ -515,15 +456,15 @@ a.button-border span {
     overflow: hidden;
     position: relative;
     background-color: transparent;
-    color: #4FC1F0;
+    color: #167ac6;
     font-size: 15px;
-    border: 1px solid #4FC1F0;
+    border: 1px solid #167ac6;
 }
 
 a.button-border span:hover {
-    box-shadow: -200px 0 0 #4FC1F0 inset;
+    box-shadow: -200px 0 0 #167ac6 inset;
     color: #fff;
-    border-color: #4FC1F0;
+    border-color: #167ac6;
 }
 
 a.button-border-white span {
@@ -543,7 +484,7 @@ a.button-border-white span {
 
 a.button-border-white span:hover {
     box-shadow: -200px 0 0 #fff inset;
-    color: #4FC1F0;
+    color: #167ac6;
     border-color: #fff;
 }
 
@@ -562,7 +503,7 @@ a.button-small {
     overflow: hidden;
     padding: 0;
     position: relative;
-    background-color: #4FC1F0;
+    background-color: #167ac6;
     color: #fff;
     font-size: 15px;
 }
@@ -688,7 +629,7 @@ a.button.extra-small i {
     line-height: 50px;
     font-size: 16px;
     color: #fff;
-    background: #4FC1F0;
+    background: #167ac6;
     text-align: center;
     border-radius: 50%;
 }
@@ -724,7 +665,7 @@ a.button.extra-small i {
 *************************/
 
 .text-blue {
-    color: #4FC1F0;
+    color: #167ac6;
 }
 
 .text-white {
@@ -756,7 +697,7 @@ a.button.extra-small i {
 }
 
 .text-theme {
-    color: #ff7f00;
+    color: #167ac6;
 }
 
 
@@ -814,7 +755,7 @@ textarea {
 }
 
 textarea:focus {
-    border-color: #ff7f00;
+    border-color: #167ac6;
     outline: none;
 }
 
@@ -828,7 +769,7 @@ textarea:focus {
 }
 
 .submit-btn-1 {
-    background: rgb(255, 127, 0) none repeat scroll 0 0;
+    background: #167ac6 none repeat scroll 0 0;
     border: medium none;
     color: rgb(255, 255, 255);
     font-size: 13px;
@@ -868,7 +809,7 @@ textarea:focus {
 }
 
 .btn-hover-2::before {
-    background: #ff7f00 none repeat scroll 0 0;
+    background: #167ac6 none repeat scroll 0 0;
 }
 
 
@@ -889,7 +830,7 @@ textarea:focus {
     z-index: 999;
     background: transparent;
     font-size: 14px;
-    background: #4FC1F0;
+    background: #167ac6;
     width: 40px;
     height: 40px;
     text-align: center;

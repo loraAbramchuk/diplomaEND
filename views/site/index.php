@@ -3,6 +3,10 @@ use yii\helpers\Html;
 use app\assets\AppAsset;
 use yii\helpers\Url;
 
+
+$this->title = 'home';
+$this->params['breadcrumbs'][] = $this->title;
+
 AppAsset::register($this);
 
 $this->beginPage() ?>
@@ -20,34 +24,10 @@ $this->beginPage() ?>
         <?php $this->head() ?>
 
 
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.png">
-
-    <!-- All CSS Files -->
-    <!-- Bootstrap fremwork main css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Nivo-slider css -->
-    <link rel="stylesheet" href="lib/css/nivo-slider.css">
-    <!-- This core.css file contents all plugings css file. -->
-    <link rel="stylesheet" href="css/core.css">
-    <!-- Theme shortcodes/elements style -->
-    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
-    <!-- Theme main style -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Template color css -->
-    <link href="css/color/color-core.css" data-style="styles" rel="stylesheet">
-    <!-- User style -->
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!-- Modernizr JS -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Proftorg</title>
+
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
@@ -59,207 +39,8 @@ $this->beginPage() ?>
 <!-- Body main wrapper start -->
 <div class="wrapper">
 
-    <!-- START HEADER AREA -->
-    <header class="header-area header-wrapper">
-        <!-- header-top-bar -->
 
-        <!-- header-middle-area -->
-        <div class="header-middle-area plr-185">
-            <div class="container-fluid">
-                <div class="full-width-mega-dropdown">
-                    <div class="row">
-                        <!-- logo -->
-                        <div class="col-md-2 col-sm-6 col-xs-12">
-                            <div class="logo">
-                                <a href="<?= Url::home()?>">
-                                    <img src="img/logo/logo.png" alt="main logo">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- primary-menu -->
-                        <div class="col-md-8 hidden-sm hidden-xs">
-                            <nav id="primary-menu">
-                                <ul class="main-menu text-center">
-                                    <li><a href="<?= Url::home()?>">Главная</a></li>
-                                    <li class="mega-parent"><a href="shop.html">Каталог</a>
-                                        <div class="mega-menu-area clearfix">
-                                            <div class="mega-menu-link f-left">
-                                                <ul class="single-mega-item">
-                                                    <li class="menu-title">Бытовая химия</li>
-                                                    <li>
-                                                        <a href="#">Средства для стирки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Средства для посудомоечных машин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Средства для мытья посуды</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Средства для обуви</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#">Освежители воздуха</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Средства от насекомых</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Уход за домом</a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="single-mega-item">
-                                                    <li class="menu-title">Гигиена</li>
-
-                                                    <li>
-                                                        <a href="">Ватная и бумажная продукция</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Мыло</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Подгузники</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Средства для бритья</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход за волосами</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход за телом для детей</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход за полостью рта</a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="single-mega-item">
-                                                    <li class="menu-title">Косметика и парфюмерия</li>
-
-                                                    <li>
-                                                        <a href="">Парфюмерия для женщин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Парфюмерия для мужчин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход для детей</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход для женщин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход для мужчин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход за ногтями</a>
-                                                    </li>
-
-                                                </ul>
-                                                <ul class="single-mega-item">
-                                                    <li class="menu-title">Хозяйственные товары</li>
-
-                                                    <li>
-                                                        <a href="">Инвентарь для уборки дома</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Пакеты для заморозки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Пакеты для мусора</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Пакеты для фасовки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Перчатки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Салфетки/губки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Другие хозяйственные товары</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                    <li class="mega-parent"><a href="blog-2.html">Наши партнеры</a>
-
-                                    </li>
-                                    <li><a href="blog.html">Новости</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?=Url::to('site/about') ?>">О компании</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Контакты</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- header-search & total-cart -->
-                        <div class="col-md-2 col-sm-6 col-xs-12">
-                            <div class="search-top-cart  f-right">
-                                <!-- header-search -->
-                                <div class="header-search f-left">
-                                    <div class="header-search-inner">
-                                        <button class="search-toggle">
-                                            <i class="zmdi zmdi-search"></i>
-                                        </button>
-                                        <form action="#">
-                                            <div class="top-search-box">
-                                                <input type="text" placeholder="Поиск...">
-                                                <button type="submit">
-                                                    <i class="zmdi zmdi-search"></i>
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- END HEADER AREA -->
-
-    <!-- START MOBILE MENU AREA -->
-    <div class="mobile-menu-area hidden-lg hidden-md">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="mobile-menu">
-                        <nav id="dropdown">
-                            <ul>
-                                <li><a href="<?= Url::home()?>">Главная</a></li>
-                                <li>
-                                    <a href="shop.html">Каталог</a>
-                                </li>
-                                <li><a href="#">Наши партнеры</a></li>
-                                <li><a href="blog.html">Новости</a></li>
-                                <li>
-                                    <a href="about.html">О компании</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END MOBILE MENU AREA -->
-
-    <!-- START SLIDER AREA -->
-    <div class="slider-area youtube-bg bg-opacity-black-60 ptb-160 mb-80">
+    <div class="slider-area youtube-bg ptb-160 mb-80">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -299,7 +80,7 @@ $this->beginPage() ?>
                             <div class="product-item product-item-2">
                                 <div class="product-img">
                                     <a href="single-product.html">
-                                        <img src="img/product-2/1.jpg" alt="" />
+                                        <img src="/img/product-2/1.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="product-info">
@@ -318,7 +99,7 @@ $this->beginPage() ?>
                             <div class="product-item product-item-2">
                                 <div class="product-img">
                                     <a href="single-product.html">
-                                        <img src="img/product-2/2.jpg" alt="" />
+                                        <img src="/img/product-2/2.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="product-info">
@@ -337,7 +118,7 @@ $this->beginPage() ?>
                             <div class="product-item product-item-2">
                                 <div class="product-img">
                                     <a href="single-product.html">
-                                        <img src="img/product-2/3.jpg" alt="" />
+                                        <img src="/img/product-2/3.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="product-info">
@@ -356,7 +137,7 @@ $this->beginPage() ?>
                             <div class="product-item product-item-2">
                                 <div class="product-img">
                                     <a href="single-product.html">
-                                        <img src="img/product-2/4.jpg" alt="" />
+                                        <img src="/img/product-2/4.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="product-info">
@@ -375,7 +156,7 @@ $this->beginPage() ?>
                             <div class="product-item product-item-2">
                                 <div class="product-img">
                                     <a href="single-product.html">
-                                        <img src="img/product-2/3.jpg" alt="" />
+                                        <img src="/img/product-2/3.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="product-info">
@@ -394,9 +175,6 @@ $this->beginPage() ?>
             </div>
         </div>
         <!-- FEATURED PRODUCT SECTION END -->
-
-        <!-- UP COMMING PRODUCT SECTION START -->
-
 
         <!-- PRODUCT TAB SECTION START -->
         <div class="product-tab-section section-bg-tb pt-80 pb-55">
@@ -431,7 +209,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/5.jpg" alt="" />
+                                                <img src="/img/product-2/5.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -450,7 +228,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/2.jpg" alt="" />
+                                                <img src="/img/product-2/2.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -469,7 +247,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/6.jpg" alt="" />
+                                                <img src="/img/product-2/6.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -488,7 +266,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/3.jpg" alt="" />
+                                                <img src="/img/product-2/3.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -507,7 +285,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
+                                                <img src="/img/product-2/4.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -526,7 +304,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/1.jpg" alt="" />
+                                                <img src="/img/product-2/1.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -545,7 +323,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
+                                                <img src="/img/product-2/7.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -564,7 +342,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
+                                                <img src="/img/product-2/4.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -589,7 +367,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
+                                                <img src="/img/product-2/7.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -608,7 +386,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/6.jpg" alt="" />
+                                                <img src="/img/product-2/6.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -627,7 +405,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/5.jpg" alt="" />
+                                                <img src="/img/product-2/5.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -646,7 +424,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
+                                                <img src="/img/product-2/4.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -665,7 +443,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/3.jpg" alt="" />
+                                                <img src="/img/product-2/3.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -684,7 +462,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/2.jpg" alt="" />
+                                                <img src="/img/product-2/2.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -703,7 +481,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/1.jpg" alt="" />
+                                                <img src="/img/product-2/1.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -722,7 +500,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
+                                                <img src="/img/product-2/7.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -747,7 +525,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/1.jpg" alt="" />
+                                                <img src="/img/product-2/1.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -766,7 +544,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
+                                                <img src="/img/product-2/4.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -785,7 +563,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
+                                                <img src="/img/product-2/7.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -804,7 +582,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/5.jpg" alt="" />
+                                                <img src="/img/product-2/5.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -823,7 +601,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/6.jpg" alt="" />
+                                                <img src="/img/product-2/6.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -842,7 +620,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/2.jpg" alt="" />
+                                                <img src="/img/product-2/2.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -880,7 +658,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
+                                                <img src="/img/product-2/4.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -905,7 +683,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/3.jpg" alt="" />
+                                                <img src="/img/product-2/3.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -924,7 +702,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/1.jpg" alt="" />
+                                                <img src="/img/product-2/1.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -943,7 +721,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/2.jpg" alt="" />
+                                                <img src="/img/product-2/2.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -962,7 +740,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
+                                                <img src="/img/product-2/4.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -981,7 +759,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/5.jpg" alt="" />
+                                                <img src="/img/product-2/5.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -1000,7 +778,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/6.jpg" alt="" />
+                                                <img src="/img/product-2/6.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -1019,7 +797,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
+                                                <img src="/img/product-2/7.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -1038,7 +816,7 @@ $this->beginPage() ?>
                                     <div class="product-item product-item-2">
                                         <div class="product-img">
                                             <a href="single-product.html">
-                                                <img src="img/product-2/3.jpg" alt="" />
+                                                <img src="/img/product-2/3.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-info">
@@ -1077,7 +855,7 @@ $this->beginPage() ?>
                         <!-- blog-item start -->
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="blog-item">
-                                <img src="img/blog/1.jpg" alt="">
+                                <img src="/img/blog/1.jpg" alt="">
                                 <div class="blog-desc">
                                     <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
                                     <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
@@ -1092,7 +870,7 @@ $this->beginPage() ?>
                         <!-- blog-item start -->
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="blog-item">
-                                <img src="img/blog/1.jpg" alt="">
+                                <img src="/img/blog/1.jpg" alt="">
                                 <div class="blog-desc">
                                     <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
                                     <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
@@ -1107,7 +885,7 @@ $this->beginPage() ?>
                         <!-- blog-item start -->
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="blog-item">
-                                <img src="img/blog/1.jpg" alt="">
+                                <img src="/img/blog/1.jpg" alt="">
                                 <div class="blog-desc">
                                     <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
                                     <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
@@ -1162,7 +940,7 @@ $this->beginPage() ?>
                         </div>
                         <ul class="footer-menu-2">
                             <li><a href="<?= Url::home()?>">Главная</a></li>
-                            <li><a href="shop.html">Каталог</a></li>
+                            <li><a href="<?= Url::to('site/shop')?>">Каталог</a></li>
                             <li><a href="blog-2.html">Наши партнеры</a></li>
                             <li><a href="blog.html">Новости</a></li>
                             <li><a href="about.html">О компании</a></li>
@@ -1176,26 +954,9 @@ $this->beginPage() ?>
     </footer>
     <!-- END FOOTER AREA -->
 
-    <!-- START QUICKVIEW PRODUCT -->
-
-    <!-- END QUICKVIEW PRODUCT -->
 
 </div>
-<!-- Body main wrapper end -->
 
-
-<!-- Placed JS at the end of the document so the pages load faster -->
-
-<!-- jquery latest version -->
-<script src="js/vendor/jquery-3.1.1.min.js"></script>
-<!-- Bootstrap framework js -->
-<script src="js/bootstrap.min.js"></script>
-<!-- jquery.nivo.slider js -->
-<script src="lib/js/jquery.nivo.slider.js"></script>
-<!-- All js plugins included in this file. -->
-<script src="js/plugins.js"></script>
-<!-- Main js file that contents all jQuery plugins activation. -->
-<script src="js/main.js"></script>
 <?php $this->endBody() ?>
 </body>
 

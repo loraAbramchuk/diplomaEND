@@ -1,6 +1,10 @@
 <?php
 use yii\helpers\Html;
 use app\assets\AppAsset;
+use yii\helpers\Url;
+
+$this->title = 'katalog';
+$this->params['breadcrumbs'][] = $this->title;
 
 AppAsset::register($this);
 
@@ -18,31 +22,6 @@ $this->beginPage() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
 
-
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.png">
-
-    <!-- All CSS Files -->
-    <!-- Bootstrap fremwork main css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Nivo-slider css -->
-    <link rel="stylesheet" href="lib/css/nivo-slider.css">
-    <!-- This core.css file contents all plugings css file. -->
-    <link rel="stylesheet" href="css/core.css">
-    <!-- Theme shortcodes/elements style -->
-    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
-    <!-- Theme main style -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Responsive css -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Template color css -->
-    <link href="css/color/color-core.css" data-style="styles" rel="stylesheet">
-    <!-- User style -->
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!-- Modernizr JS -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -58,1115 +37,827 @@ $this->beginPage() ?>
 <!-- Body main wrapper start -->
 <div class="wrapper">
 
-    <!-- START HEADER AREA -->
-    <header class="header-area header-wrapper">
-        <!-- header-top-bar -->
 
-        <!-- header-middle-area -->
-        <div class="header-middle-area plr-185">
-            <div class="container-fluid">
-                <div class="full-width-mega-dropdown">
-                    <div class="row">
-                        <!-- logo -->
-                        <div class="col-md-2 col-sm-6 col-xs-12">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="img/logo/logo.png" alt="main logo">
-                                </a>
-                            </div>
+
+    <!-- BREADCRUMBS SETCTION START -->
+    <div class="breadcrumbs-section mb-80">
+        <div class="breadcrumbs overlay-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcrumbs-inner">
+                            <h1 class="breadcrumbs-title">Каталог товаров</h1>
+                            <ul class="breadcrumb-list">
+                                <li><a href="<?= Url::home()?>">Главная</a></li>
+                                <li>Каталог товаров</li>
+                            </ul>
                         </div>
-                        <!-- primary-menu -->
-                        <div class="col-md-8 hidden-sm hidden-xs">
-                            <nav id="primary-menu">
-                                <ul class="main-menu text-center">
-                                    <li><a href="index.html">Главная</a></li>
-                                    <li class="mega-parent"><a href="shop.html">Каталог</a>
-                                        <div class="mega-menu-area clearfix">
-                                            <div class="mega-menu-link f-left">
-                                                <ul class="single-mega-item">
-                                                    <li class="menu-title">Бытовая химия</li>
-                                                    <li>
-                                                        <a href="#">Средства для стирки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Средства для посудомоечных машин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Средства для мытья посуды</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Средства для обуви</a>
-                                                    </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BREADCRUMBS SETCTION END -->
 
-                                                    <li>
-                                                        <a href="#">Освежители воздуха</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Средства от насекомых</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Уход за домом</a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="single-mega-item">
-                                                    <li class="menu-title">Гигиена</li>
+    <!-- Start page content -->
+    <div id="page-content" class="page-wrapper">
 
-                                                    <li>
-                                                        <a href="">Ватная и бумажная продукция</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Мыло</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Подгузники</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Средства для бритья</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход за волосами</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход за телом для детей</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход за полостью рта</a>
-                                                    </li>
-                                                </ul>
-                                                <ul class="single-mega-item">
-                                                    <li class="menu-title">Косметика и парфюмерия</li>
-
-                                                    <li>
-                                                        <a href="">Парфюмерия для женщин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Парфюмерия для мужчин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход для детей</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход для женщин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход для мужчин</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Уход за ногтями</a>
-                                                    </li>
-
-                                                </ul>
-                                                <ul class="single-mega-item">
-                                                    <li class="menu-title">Хозяйственные товары</li>
-
-                                                    <li>
-                                                        <a href="">Инвентарь для уборки дома</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Пакеты для заморозки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Пакеты для мусора</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Пакеты для фасовки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Перчатки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Салфетки/губки</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Другие хозяйственные товары</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                    <li class="mega-parent"><a href="blog-2.html">Наши партнеры</a>
-
-                                    </li>
-                                    <li><a href="blog.html">Новости</a>
+        <!-- SHOP SECTION START -->
+        <div class="shop-section mb-80">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9 col-md-push-3 col-sm-12">
+                        <div class="shop-content">
+                            <!-- shop-option start -->
+                            <div class="shop-option box-shadow mb-30 clearfix">
+                                <!-- Nav tabs -->
+                                <ul class="shop-tab f-left" role="tablist">
+                                    <li class="active">
+                                        <a href="#grid-view" data-toggle="tab"><i class="zmdi zmdi-view-module"></i></a>
                                     </li>
                                     <li>
-                                        <a href="about.html">О компании</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Контакты</a>
+                                        <a href="#list-view" data-toggle="tab"><i class="zmdi zmdi-view-list-alt"></i></a>
                                     </li>
                                 </ul>
-                            </nav>
-                        </div>
-                        <!-- header-search & total-cart -->
-                        <div class="col-md-2 col-sm-6 col-xs-12">
-                            <div class="search-top-cart  f-right">
-                                <!-- header-search -->
-                                <div class="header-search f-left">
-                                    <div class="header-search-inner">
-                                        <button class="search-toggle">
-                                            <i class="zmdi zmdi-search"></i>
-                                        </button>
-                                        <form action="#">
-                                            <div class="top-search-box">
-                                                <input type="text" placeholder="Поиск...">
-                                                <button type="submit">
-                                                    <i class="zmdi zmdi-search"></i>
-                                                </button>
+                                <!-- short-by -->
+                                <div class="short-by f-left text-center">
+                                    <span>Сортировать :</span>
+                                    <select>
+                                        <option value="volvo">По популярности</option>
+                                        <option value="saab">По названию А--Я</option>
+                                        <option value="mercedes">По названию Я--А</option>
+                                        <option value="audi">По рейтингу</option>
+                                    </select>
+                                </div>
+                                <!-- showing -->
+                                <div class="showing f-right text-right">
+                                    <span>Дата обновления : 01-09-17</span>
+                                </div>
+                            </div>
+                            <!-- shop-option end -->
+                            <!-- Tab Content start -->
+                            <div class="tab-content">
+                                <!-- grid-view -->
+                                <div role="tabpanel" class="tab-pane active" id="grid-view">
+                                    <div class="row">
+                                        <!-- product-item start -->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/7.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h6 class="product-title">
+                                                        <a href="single-product.html">Product Name </a>
+                                                    </h6>
+                                                    <div class="pro-rating">
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                    </div>
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
                                             </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/2.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h6 class="product-title">
+                                                        <a href="single-product.html">Product Name</a>
+                                                    </h6>
+                                                    <div class="pro-rating">
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                    </div>
+
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/9.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h6 class="product-title">
+                                                        <a href="single-product.html">Product Name</a>
+                                                    </h6>
+                                                    <div class="pro-rating">
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                    </div>
+
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/4.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h6 class="product-title">
+                                                        <a href="single-product.html">Product Name</a>
+                                                    </h6>
+                                                    <div class="pro-rating">
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                    </div>
+
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/10.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h6 class="product-title">
+                                                        <a href="single-product.html">Product Name</a>
+                                                    </h6>
+                                                    <div class="pro-rating">
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                    </div>
+
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/11.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h6 class="product-title">
+                                                        <a href="single-product.html">Product Name</a>
+                                                    </h6>
+                                                    <div class="pro-rating">
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                    </div>
+
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/8.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h6 class="product-title">
+                                                        <a href="single-product.html">Product Name</a>
+                                                    </h6>
+                                                    <div class="pro-rating">
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                    </div>
+
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/12.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h6 class="product-title">
+                                                        <a href="single-product.html">Product Name</a>
+                                                    </h6>
+                                                    <div class="pro-rating">
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                    </div>
+
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/12.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h6 class="product-title">
+                                                        <a href="single-product.html">Product Name</a>
+                                                    </h6>
+                                                    <div class="pro-rating">
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                        <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                    </div>
+
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                    </div>
+                                </div>
+                                <!-- list-view -->
+                                <div role="tabpanel" class="tab-pane" id="list-view">
+                                    <div class="row">
+                                        <!-- product-item start -->
+                                        <div class="col-md-12">
+                                            <div class="shop-list product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/7.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <div class="clearfix">
+                                                        <h6 class="product-title f-left">
+                                                            <a href="single-product.html">Dummy Product Name </a>
+                                                        </h6>
+                                                        <div class="pro-rating f-right">
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="brand-name mb-30">Brand Name</h6>
+
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-12">
+                                            <div class="shop-list product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/10.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <div class="clearfix">
+                                                        <h6 class="product-title f-left">
+                                                            <a href="single-product.html">Dummy Product Name </a>
+                                                        </h6>
+                                                        <div class="pro-rating f-right">
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="brand-name mb-30">Brand Name</h6>
+
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-12">
+                                            <div class="shop-list product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/4.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <div class="clearfix">
+                                                        <h6 class="product-title f-left">
+                                                            <a href="single-product.html">Dummy Product Name </a>
+                                                        </h6>
+                                                        <div class="pro-rating f-right">
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="brand-name mb-30">Brand Name</h6>
+
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-12">
+                                            <div class="shop-list product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/8.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <div class="clearfix">
+                                                        <h6 class="product-title f-left">
+                                                            <a href="single-product.html">Dummy Product Name </a>
+                                                        </h6>
+                                                        <div class="pro-rating f-right">
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="brand-name mb-30">Brand Name</h6>
+
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                        <!-- product-item start -->
+                                        <div class="col-md-12">
+                                            <div class="shop-list product-item">
+                                                <div class="product-img">
+                                                    <a href="single-product.html">
+                                                        <img src="/img/product/2.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <div class="clearfix">
+                                                        <h6 class="product-title f-left">
+                                                            <a href="single-product.html">Dummy Product Name </a>
+                                                        </h6>
+                                                        <div class="pro-rating f-right">
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-half"></i></a>
+                                                            <a href="#"><i class="zmdi zmdi-star-outline"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="brand-name mb-30">Brand Name</h6>
+
+                                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                                    <ul class="action-button">
+
+                                                        <li>
+                                                            <a href="#" data-toggle="modal" data-target="#productModal" title="Quickview"><i class="zmdi zmdi-zoom-in"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Compare"><i class="zmdi zmdi-refresh"></i></a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- product-item end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab Content end -->
+                            <!-- shop-pagination start -->
+                            <ul class="shop-pagination box-shadow text-center ptblr-10-30">
+                                <li><a href="#"><i class="zmdi zmdi-chevron-left"></i></a></li>
+                                <li><a href="#">01</a></li>
+                                <li><a href="#">02</a></li>
+                                <li><a href="#">03</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">05</a></li>
+                                <li class="active"><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li>
+                            </ul>
+                            <!-- shop-pagination end -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-pull-9 col-sm-12">
+
+                        <aside class="widget widget-categories box-shadow mb-30">
+                            <h6 class="widget-title border-left mb-20">Категории</h6>
+                            <div id="cat-treeview" class="product-cat">
+                                <ul>
+                                    <li class="closed"><a href="#">Бытовая химия</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Средства для стирки</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Средства для посудомоечных машин</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Средства для мытья посуды</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Средства для обуви</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">Освежители воздуха</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Средства от насекомых</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Уход за домом</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="open"><a href="#">Гигиена</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Ватная и бумажная продукция</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Мыло</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Подгузники</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Средства для бритья</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Уход за волосами</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Уход за телом для детей</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Уход за полостью рта</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="closed"><a href="#">Косметика и парфюмерия</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Парфюмерия для женщин</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Парфюмерия для мужчин</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Уход для детей</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Уход для женщин</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Уход для мужчин</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Уход за ногтями</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="closed"><a href="#">Хозяйственные товары</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Инвентарь для уборки дома</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Пакеты для заморозки</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Пакеты для мусора</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Пакеты для фасовки</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Перчатки</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Салфетки/губки</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Другие хозяйственные товары</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </aside>
+                        <!-- shop-filter -->
+
+                        <!-- widget-1 -->
+                        <aside class="widget widget-color box-shadow mb-30">
+                            <h6 class="widget-title border-left mb-20">Страна производства</h6>
+                            <form action="action_page.php">
+                                <label><input type="checkbox" name="operating-1" value="phone-1"> Беларусь</label><br>
+                                <label><input type="checkbox" name="operating-1" value="phone-1"> Россия</label><br>
+                                <label><input type="checkbox" name="operating-1" value="phone-1"> Польша</label><br>
+                                <label><input type="checkbox" name="operating-1" value="phone-1"> Турция</label><br>
+
+                                <!-- <label class="mb-0"><input type="checkbox" name="operating-1" value="phone-1">Bleckgerry os</label><br>-->
+                            </form>
+                        </aside>
+                        <!-- operating-2 -->
+                        <aside class="widget operating-system box-shadow mb-30">
+                            <h6 class="widget-title border-left mb-20">Производитель</h6>
+                            <form action="action_page.php">
+                                <label><input type="checkbox" name="operating-1" value="phone-1">Windows Phone</label><br>
+                                <label><input type="checkbox" name="operating-1" value="phone-1">Bleckgerry ios</label><br>
+                                <label><input type="checkbox" name="operating-1" value="phone-1">Android</label><br>
+                                <label><input type="checkbox" name="operating-1" value="phone-1">ios</label><br>
+                                <label><input type="checkbox" name="operating-1" value="phone-1">Windows Phone</label><br>
+                                <label><input type="checkbox" name="operating-1" value="phone-1">Symban</label><br>
+                                <label class="mb-0"><input type="checkbox" name="operating-1" value="phone-1">Bleckgerry os</label><br>
+                            </form>
+                        </aside>
+                        <!-- widget-product -->
+                        <aside class="widget widget-product box-shadow">
+                            <h6 class="widget-title border-left mb-20">Рекомендуем</h6>
+                            <!-- product-item start -->
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="single-product.html">
+                                        <img src="/img/product/4.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <h6 class="product-title">
+                                        <a href="single-product.html">Product Name</a>
+                                    </h6>
+
+                                </div>
+                            </div>
+                            <!-- product-item end -->
+                            <!-- product-item start -->
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="single-product.html">
+                                        <img src="/img/product/8.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <h6 class="product-title">
+                                        <a href="single-product.html">Product Name</a>
+                                    </h6>
+
+                                </div>
+                            </div>
+                            <!-- product-item end -->
+                            <!-- product-item start -->
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a href="single-product.html">
+                                        <img src="/img/product/12.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <h6 class="product-title">
+                                        <a href="single-product.html">Product Name</a>
+                                    </h6>
+
+                                </div>
+                            </div>
+                            <!-- product-item end -->
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SHOP SECTION END -->
+
+    </div>
+    <!-- End page content -->
+
+    <!-- START FOOTER AREA -->
+    <footer id="footer" class="footer-area">
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div>
+                    <div class="footer-top-inner gray-bg">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-5 col-sm-4">
+                                <div class="single-footer footer-about">
+                                    <div class="footer-logo">
+                                        <img src="/img/logo/logo.png" alt="">
+                                    </div>
+                                    <div class="footer-brief">
+                                        <p>Компания «Профторг» – дистрибьютор бытовой химии в Беларуси, средств гигиены, хозяйственных товаров, косметики и парфюмерии оптом. Мы работаем уже более 10 лет и занимаем лидирующие позиции на белорусском рынке
+                                            благодаря основному принципу работы – взаимовыгодное сотрудничество, в результате которого выигрывают все стороны.</p>
+                                        <p>В компании «Профторг» можно купить более 1000 наименований товаров средств гигиены, парфюмерии, косметики и бытовой химии оптом. Клиентская база включает свыше 3000 розничных торговых точек.</p>
+                                    </div>
+                                    <ul class="footer-social">
+                                        <li>
+                                            <a class="facebook" href="" title="Facebook"><i class="zmdi zmdi-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="google-plus" href="" title="Google Plus"><i class="zmdi zmdi-google-plus"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="twitter" href="" title="Twitter"><i class="zmdi zmdi-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="rss" href="" title="RSS"><i class="zmdi zmdi-rss"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="single-footer">
+                                    <h4 class="footer-title border-left">Обратная связь</h4>
+                                    <div class="footer-message">
+                                        <form action="#">
+                                            <input type="text" name="name" placeholder="Ваше имя...">
+                                            <input type="text" name="email" placeholder="Ваш е-mail...">
+                                            <textarea class="height-80" name="message" placeholder="Ваше сообщение..."></textarea>
+                                            <button class="submit-btn-1 mt-20 btn-hover-1" type="submit">Отправить</button>
                                         </form>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- END HEADER AREA -->
-
-    <!-- START MOBILE MENU AREA -->
-    <div class="mobile-menu-area hidden-lg hidden-md">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="mobile-menu">
-                        <nav id="dropdown">
-                            <ul>
-                                <li><a href="index.html">Главная</a></li>
-                                <li>
-                                    <a href="shop.html">Каталог</a>
-                                </li>
-                                <li><a href="#">Наши партнеры</a></li>
-                                <li><a href="blog.html">Новости</a></li>
-                                <li>
-                                    <a href="about.html">О компании</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END MOBILE MENU AREA -->
-
-    <!-- START SLIDER AREA -->
-    <div class="slider-area youtube-bg bg-opacity-black-60 ptb-160 mb-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="slider-desc-3 slider-desc-4  text-center">
-                        <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-                            <h1 class="slider2-title-2">Какой-то тест</h1>
-                        </div>
-                        <div class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
-                            <h2 class="slider2-title-3">Какой-то текст</h2>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END SLIDER AREA -->
-
-    <!-- START PAGE CONTENT -->
-    <section id="page-content" class="page-wrapper">
-
-        <!-- FEATURED PRODUCT SECTION START -->
-        <div class="featured-product-section section-bg-tb pt-80 pb-55">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-left mb-20">
-                            <h2 class="uppercase">Новые акции</h2>
-                            <h6>Скидки на товары предоставляются в течении месяца.</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-product">
-                    <div class="row active-featured-product slick-arrow-2">
-                        <!-- product-item start -->
-                        <div class="col-xs-12">
-                            <div class="product-item product-item-2">
-                                <div class="product-img">
-                                    <a href="single-product.html">
-                                        <img src="img/product-2/1.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <h6 class="product-title">
-                                        <a href="single-product.html">Product Name</a>
-                                    </h6>
-                                    <h6 class="brand-name">Sumsung</h6>
-                                    <h3 class="pro-price">-35%</h3>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- product-item end -->
-                        <!-- product-item start -->
-                        <div class="col-xs-12">
-                            <div class="product-item product-item-2">
-                                <div class="product-img">
-                                    <a href="single-product.html">
-                                        <img src="img/product-2/2.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <h6 class="product-title">
-                                        <a href="single-product.html">Product Name</a>
-                                    </h6>
-                                    <h6 class="brand-name">Sumsung</h6>
-                                    <h3 class="pro-price">-50%</h3>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- product-item end -->
-                        <!-- product-item start -->
-                        <div class="col-xs-12">
-                            <div class="product-item product-item-2">
-                                <div class="product-img">
-                                    <a href="single-product.html">
-                                        <img src="img/product-2/3.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <h6 class="product-title">
-                                        <a href="single-product.html">Product Name</a>
-                                    </h6>
-                                    <h6 class="brand-name">Sumsung</h6>
-                                    <h3 class="pro-price">-15%</h3>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- product-item end -->
-                        <!-- product-item start -->
-                        <div class="col-xs-12">
-                            <div class="product-item product-item-2">
-                                <div class="product-img">
-                                    <a href="single-product.html">
-                                        <img src="img/product-2/4.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <h6 class="product-title">
-                                        <a href="single-product.html">Product Name</a>
-                                    </h6>
-                                    <h6 class="brand-name">Sumsung</h6>
-                                    <h3 class="pro-price">-25%</h3>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- product-item end -->
-                        <!-- product-item start -->
-                        <div class="col-xs-12">
-                            <div class="product-item product-item-2">
-                                <div class="product-img">
-                                    <a href="single-product.html">
-                                        <img src="img/product-2/3.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <h6 class="product-title">
-                                        <a href="single-product.html">Product Name</a>
-                                    </h6>
-                                    <h6 class="brand-name">Sumsung</h6>
-                                    <h3 class="pro-price">-28%</h3>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- product-item end -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FEATURED PRODUCT SECTION END -->
-
-        <!-- UP COMMING PRODUCT SECTION START -->
-
-
-        <!-- PRODUCT TAB SECTION START -->
-        <div class="product-tab-section section-bg-tb pt-80 pb-55">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 col-xs-12">
-                        <div class="section-title text-left mb-40">
-                            <h2 class="uppercase">Товары</h2>
-                            <h6></h6>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-sm-12 col-xs-12">
-                        <div class="pro-tab-menu pro-tab-menu-2 text-right">
-                            <!-- Nav tabs -->
-                            <ul class="">
-                                <li class="active"><a href="#popular-product" data-toggle="tab">Популярные товары</a></li>
-                                <li><a href="#new-arrival" data-toggle="tab">Новые товары</a></li>
-                                <li><a href="#best-seller" data-toggle="tab">Лучшее предложение</a></li>
-                                <li><a href="#special-offer" data-toggle="tab">Специальное предложение</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-tab">
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <!-- popular-product start -->
-                        <div class="tab-pane active" id="popular-product">
-                            <div class="row">
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/5.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/2.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/6.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/3.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/1.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 hidden-sm col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 hidden-sm col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                            </div>
-                        </div>
-                        <!-- popular-product end -->
-                        <!-- new-arrival start -->
-                        <div class="tab-pane" id="new-arrival">
-                            <div class="row">
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/6.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/5.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/3.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/2.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 hidden-sm col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/1.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 hidden-sm col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                            </div>
-                        </div>
-                        <!-- new-arrival end -->
-                        <!-- best-seller start -->
-                        <div class="tab-pane" id="best-seller">
-                            <div class="row">
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/1.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/5.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/6.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/2.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 hidden-sm col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/3.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 hidden-sm col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                            </div>
-                        </div>
-                        <!-- best-seller end -->
-                        <!-- special-offer start -->
-                        <div class="tab-pane" id="special-offer">
-                            <div class="row">
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/3.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/1.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/2.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/4.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/5.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 col-sm-4 col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/6.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 hidden-sm col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/7.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                                <!-- product-item start -->
-                                <div class="col-md-3 hidden-sm col-xs-12">
-                                    <div class="product-item product-item-2">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img src="img/product-2/3.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <h6 class="product-title">
-                                                <a href="single-product.html">Product Name</a>
-                                            </h6>
-                                            <h6 class="brand-name">Sumsung</h6>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- product-item end -->
-                            </div>
-                        </div>
-                        <!-- special-offer end -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- PRODUCT TAB SECTION END -->
-
-        <!-- BLOG SECTION START -->
-        <div class="blog-section-2 pt-60 pb-30">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title text-left mb-40">
-                            <h2 class="uppercase">Последние новости</h2>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="blog">
-                    <div class="row">
-                        <!-- blog-item start -->
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="blog-item">
-                                <img src="img/blog/1.jpg" alt="">
-                                <div class="blog-desc">
-                                    <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
-                                    <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
-                                    <div class="read-more">
-                                        <a href="single-blog.html">Read more</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- blog-item end -->
-                        <!-- blog-item start -->
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="blog-item">
-                                <img src="img/blog/1.jpg" alt="">
-                                <div class="blog-desc">
-                                    <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
-                                    <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
-                                    <div class="read-more">
-                                        <a href="single-blog.html">Read more</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- blog-item end -->
-                        <!-- blog-item start -->
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="blog-item">
-                                <img src="img/blog/1.jpg" alt="">
-                                <div class="blog-desc">
-                                    <h5 class="blog-title"><a href="single-blog.html">dummy Blog name</a></h5>
-                                    <p>There are many variations of passages of psum available, but the majority have suffered alterat on in some form, by injected humour, randomis words which don't look even slightly.</p>
-                                    <div class="read-more">
-                                        <a href="single-blog.html">Read more</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- blog-item end -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- BLOG SECTION END -->
-
-        <!-- NEWSLETTER SECTION START -->
-        <div class="newsletter-section section-bg-tb pt-60 pb-80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-xs-12">
-                        <div class="newsletter">
-                            <div class="newsletter-info text-center">
-                                <h2 class="newsletter-title">Следить за новостями</h2>
-                                <p>Удостоверьтесь, что вы никогда не пропустите наши интересные новости
-                                    <br class="hidden-xs">присоединившись к нашей программе рассылки новостей..</p>
-                            </div>
-                            <div class="subcribe clearfix">
-                                <form action="#">
-                                    <input type="text" name="email" placeholder="Введите свой е-mail..." />
-                                    <button class="submit-btn-2 btn-hover-2" type="submit">подписаться</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- NEWSLETTER SECTION END -->
-    </section>
-    <!-- END PAGE CONTENT -->
-
-    <!-- START FOOTER AREA -->
-    <footer id="footer" class="footer-area footer-2">
-        <div class="footer-top footer-top-2 text-center ptb-60">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="footer-logo">
-                            <img src="img/logo/logo.png" alt="">
-                        </div>
-                        <ul class="footer-menu-2">
-                            <li><a href="index.html">Главная</a></li>
-                            <li><a href="shop.html">Каталог</a></li>
-                            <li><a href="blog-2.html">Наши партнеры</a></li>
-                            <li><a href="blog.html">Новости</a></li>
-                            <li><a href="about.html">О компании</a></li>
-                            <li><a href="contact.html">Контакты</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -1188,7 +879,7 @@ $this->beginPage() ?>
                         <div class="modal-product clearfix">
                             <div class="product-images">
                                 <div class="main-image images">
-                                    <img alt="" src="img/product/quickview.jpg">
+                                    <img alt="" src="/img/product/quickview.jpg">
                                 </div>
                             </div>
                             <!-- .product-images -->
@@ -1196,55 +887,13 @@ $this->beginPage() ?>
                             <div class="product-info">
                                 <h1>Aenean eu tristique</h1>
                                 <div class="price-box-3">
-                                    <div class="s-price-box">
-                                        <span class="new-price">£160.00</span>
-                                        <span class="old-price">£190.00</span>
-                                    </div>
+
                                 </div>
-                                <a href="single-product-left-sidebar.html" class="see-all">See all features</a>
-                                <div class="quick-add-to-cart">
-                                    <form method="post" class="cart">
-                                        <div class="numbers-row">
-                                            <input type="number" id="french-hens" value="3">
-                                        </div>
-                                        <button class="single_add_to_cart_button" type="submit">Add to cart</button>
-                                    </form>
-                                </div>
+
                                 <div class="quick-desc">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero.
                                 </div>
-                                <div class="social-sharing">
-                                    <div class="widget widget_socialsharing_widget">
-                                        <h3 class="widget-title-modal">Share this product</h3>
-                                        <ul class="social-icons clearfix">
-                                            <li>
-                                                <a class="facebook" href="#" target="_blank" title="Facebook">
-                                                    <i class="zmdi zmdi-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="google-plus" href="#" target="_blank" title="Google +">
-                                                    <i class="zmdi zmdi-google-plus"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="twitter" href="#" target="_blank" title="Twitter">
-                                                    <i class="zmdi zmdi-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="pinterest" href="#" target="_blank" title="Pinterest">
-                                                    <i class="zmdi zmdi-pinterest"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="rss" href="#" target="_blank" title="RSS">
-                                                    <i class="zmdi zmdi-rss"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+
                             </div>
                             <!-- .product-info -->
                         </div>
@@ -1259,23 +908,9 @@ $this->beginPage() ?>
         <!-- END Modal -->
     </div>
     <!-- END QUICKVIEW PRODUCT -->
-
 </div>
 <!-- Body main wrapper end -->
 
-
-<!-- Placed JS at the end of the document so the pages load faster -->
-
-<!-- jquery latest version -->
-<script src="js/vendor/jquery-3.1.1.min.js"></script>
-<!-- Bootstrap framework js -->
-<script src="js/bootstrap.min.js"></script>
-<!-- jquery.nivo.slider js -->
-<script src="lib/js/jquery.nivo.slider.js"></script>
-<!-- All js plugins included in this file. -->
-<script src="js/plugins.js"></script>
-<!-- Main js file that contents all jQuery plugins activation. -->
-<script src="js/main.js"></script>
 <?php $this->endBody() ?>
 </body>
 

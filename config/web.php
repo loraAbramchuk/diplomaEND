@@ -48,7 +48,7 @@ $config = [
             'rules' => [
 
                 '/' => 'site/index',
-                '<action:\w+>' => 'site/<action>',
+                '<action:\w+>' => '<action>',
                 'site/<action:\w+>/<id:\d+>' => 'site/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',

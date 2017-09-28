@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use app\models\Parners;
+use app\models\Partners;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -10,6 +12,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\DataForm;
 use app\models\ContactForm;
+use app\models\News;
 
 class SiteController extends Controller
 {
@@ -72,12 +75,15 @@ class SiteController extends Controller
 
     public function actionBlog2()
     {
-        return $this->render('blog2');
+        $partners = Partners::find()->select('ID, name, country,partners_img, info')->all();
+        return $this->render('blog2', compact('partners'));
     }
 
     public function actionBlog()
     {
-        return $this->render('blog');
+
+        $news = News::find()->select('ID, title, text')->all();
+        return $this->render('blog', compact('news'));
     }
 
     public function actionAbout()
